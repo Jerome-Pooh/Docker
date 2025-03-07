@@ -5,14 +5,14 @@ Docker Consistently build, run and ship applications
 ## Container
 
 An Isolated environment for running an application
-    - Allow running multiple apps in isolation
-    - Are lightweight
-    - Use OS of the host
-    - Start quickly
-    - Need less hardware resources
+- Allow running multiple apps in isolation
+- Are lightweight
+- Use OS of the host
+- Start quickly
+- Need less hardware resources
 
-## Virtual Machine
-    An abstraction of a machine (physical hardware)
+# Virtual Machine
+An abstraction of a machine (physical hardware)
 
 # Docker
 Clint > Rest API > Docker Engine
@@ -27,16 +27,15 @@ https://hub.docker.com
 
 
 # Create app.js
-Input 
-console.log("Hello Docker!");
-
+# Input 
+# console.log("Hello Docker!");
 
 # Create Dockerfile
 
-FROM node:alpine
-COPY . /app
-WORKDIR /app
-CMD node app.js
+ FROM node:alpine
+ COPY . /app
+ WORKDIR /app
+ CMD node app.js
 
 # Build image 
 docker build -t hello-docker
@@ -53,23 +52,24 @@ docker run hello-docker
 # Docker-AWS
 
 # Create folder for HTML
-    - Create folder src > html
-    - Create index.html 
-    - Input the html code
-        '''html
-         <!DOCTYPE html>
-<html>
+- Create folder src > html
+- Create index.html 
+- Input the html code
+        
+             '''html
+                <!DOCTYPE html>
+        <html>
 
-<body>
-    <h1>My First Web Page</h1>
-    <h1>It works on my machine...</h1>
-    <h1>and works on every machine!</h1>
-    <p>My Web Page is running on Docker</p>
-    <img src="docker.png" alt="Docker Logo" width="450" height="350">
-</body>
+        <body>
+            <h1>My First Web Page</h1>
+            <h1>It works on my machine...</h1>
+            <h1>and works on every machine!</h1>
+            <p>My Web Page is running on Docker</p>
+            <img src="docker.png" alt="Docker Logo" width="450" height="350">
+        </body>
 
-</html>
-        '''
+        </html>
+                '''
 
 # Create a Dockerfile
 # Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.
