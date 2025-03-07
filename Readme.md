@@ -27,15 +27,15 @@ https://hub.docker.com
 
 
 # Create app.js
-# Input 
-# console.log("Hello Docker!");
+        Input 
+        console.log("Hello Docker!");
 
 # Create Dockerfile
 
- FROM node:alpine
- COPY . /app
- WORKDIR /app
- CMD node app.js
+        FROM node:alpine
+        COPY . /app
+        WORKDIR /app
+        CMD node app.js
 
 # Build image 
 docker build -t hello-docker
@@ -56,8 +56,7 @@ docker run hello-docker
 - Create index.html 
 - Input the html code
         
-             '''html
-                <!DOCTYPE html>
+        !DOCTYPE html>
         <html>
 
         <body>
@@ -69,12 +68,12 @@ docker run hello-docker
         </body>
 
         </html>
-                '''
 
 # Create a Dockerfile
 # Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.
-    -FROM nginx:1.27.4-alpine-slim
-    -COPY src/html /usr/share/nginx/html
+
+        FROM nginx:1.27.4-alpine-slim
+        COPY src/html /usr/share/nginx/html
 
 # Build the image
     - docker build -t hello-wolrd .
